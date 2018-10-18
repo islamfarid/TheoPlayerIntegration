@@ -1,11 +1,13 @@
 package com.example.islam.theoplayerintegration;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.islam.theoplayerintegration.app.TheoPlayerIntegrationAPP;
+import com.example.islam.theoplayerintegration.data.TheoPlayerIntegrationRepository;
 import com.theoplayer.android.api.THEOplayerView;
 import com.theoplayer.android.api.event.EventListener;
 import com.theoplayer.android.api.event.player.PauseEvent;
@@ -16,8 +18,9 @@ import com.theoplayer.android.api.source.SourceDescription;
 import com.theoplayer.android.api.source.SourceType;
 import com.theoplayer.android.api.source.TypedSource;
 
-public class MainActivity extends AppCompatActivity {
+import javax.inject.Inject;
 
+public class MainActivity extends AppCompatActivity {
     THEOplayerView theoPlayerView;
     Button btnPlayPause;
     TextView txtPlayStatus, txtTimeUpdate;
@@ -29,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         theoPlayerView = findViewById(R.id.theoplayer);
         theoPlayerView.getSettings().setFullScreenOrientationCoupled(true);
-
         TypedSource typedSource = TypedSource.Builder
                 .typedSource()
                 .src("https://cdn.theoplayer.com/video/sintel/index.m3u8")
@@ -41,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         theoPlayerView.getPlayer().setSource(sourceDescription);
-
         btnPlayPause = findViewById(R.id.btn_playpause);
         btnPlayPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
         txtPlayStatus = findViewById(R.id.txt_playstatus);
         txtTimeUpdate = findViewById(R.id.txt_timeupdate);
-
         theoPlayerView.getPlayer().addEventListener(PlayerEventTypes.PLAY, new EventListener<PlayEvent>() {
             @Override
             public void handleEvent(PlayEvent playEvent) {
