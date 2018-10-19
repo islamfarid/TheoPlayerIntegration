@@ -1,1 +1,53 @@
-{}
+{
+  "responseCode": "000000",
+  "responseMsg": "Success",
+  "videoList": [
+    {
+      "videoName": "Video Stream 1",
+      "VideoStreamLink": "https://cdn.theoplayer.com/video/sintel/index.m3u8",
+      "VideoDuration": "2:30",
+      "videoThumbURL": "http://purepng.com/public/uploads/large/purepng.com-waterwaterdropslakessea-1411527268114d4naz.png",
+      "videoSubtitle":"subtitle 1"
+    },
+    {
+      "videoName": "Video Stream 2",
+      "VideoStreamLink": "https://cdn.theoplayer.com/video/elephants-dream/playlist.m3u8",
+      "VideoDuration": "3:30",
+      "videoThumbURL": "https://png.pngtree.com/element_pic/16/12/05/4be656a6e157f42b8bdad2b6634d2188.jpg"
+    ,
+      "videoSubtitle":"subtitle 2"
+    },
+    {
+      "videoName": "Video Stream 3",
+      "VideoStreamLink": "https://demo.theoplayer.com/hubfs/videos/natgeo/playlist.m3u8",
+      "VideoDuration": "4:30",
+      "videoThumbURL": "https://static1.squarespace.com/static/562e7a26e4b018ac41a6ab6e/584f2135e58c62c148896bc7/584f213d893fc05a834a716b/1481581002283/Grid+system+final+poster.png"
+    ,
+      "videoSubtitle":"subtitle 3"
+    },
+    {
+      "videoName": "Video Stream 4",
+      "VideoStreamLink": "http://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "VideoDuration": "5:30",
+      "videoThumbURL": "https://upload.wikimedia.org/wikipedia/en/8/8e/The_Last_Airbender_Poster.png"
+    ,
+      "videoSubtitle":"subtitle 4"
+    },
+    {
+      "videoName": "Video Stream 5",
+      "VideoStreamLink": "http://amssamples.streaming.mediaservices.windows.net/2e91931e-0d29-482b-a42b-9aadc93eb825/AzurePromo.mp4",
+      "VideoDuration": "6:30",
+      "videoThumbURL": "http://destinydb.info/wp-content/uploads/Online-Poster-Maker-Make-Your-Own-Poster-Venngage-1.png"
+    ,
+      "videoSubtitle":"subtitle 5"
+    },
+    {
+      "videoName": "Video Stream 6",
+      "VideoStreamLink": "https://download.blender.org/durian/trailer/sintel_trailer-1080p.mp4",
+      "VideoDuration": "7:30",
+      "videoThumbURL": "https://upload.wikimedia.org/wikipedia/en/e/e1/The_Darkest_Minds_poster.png"
+    ,
+      "videoSubtitle":"subtitle 6"
+    }
+  ]
+}

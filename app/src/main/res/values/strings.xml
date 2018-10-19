@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TheoPlayerIntegration</string>
+    <string name="error_no_internet_connection">No Internet Connection</string>
+    <string name="error_general">opps some thing went wrong</string>
 </resources>
